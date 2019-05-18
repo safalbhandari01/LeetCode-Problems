@@ -1,0 +1,29 @@
+class Solution {
+    public void reverseString(char[] s) {
+        int size = s.length-1;
+        int j =0;
+        char charHolder;
+        
+        if(size==-1)
+        {
+            
+        }
+        else
+        {
+        while((size-j)!=1 && size != j)
+        {
+            charHolder = s[j];
+            s[j] = s[size];
+            s[size] = charHolder;
+            j++;
+            size--;
+        }
+        if(size==j || (size-j)==1)
+        {
+            charHolder = s[j];
+            s[j] = s[size];
+            s[size] = charHolder;
+        }
+        }  
+    }
+}
